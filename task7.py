@@ -1,4 +1,13 @@
+# Funtion for Fahrenheit to Celsius and Vice Versa
+def convert_temp(scale=None, source_temp=None):
+    if scale == "F":
+        return 'C', (source_temp - 32.0) * (5.0/9.0)
+    elif scale == "C":
+        return 'F', (source_temp * (9.0/5.0)) + 32.0
+    else:
+        print("Needs to be (F) or (C)!")
 
-fahrenheit = float(input("Enter temperature in fahrenheit: "))
-celsius = (fahrenheit - 32) * 5/9
-print('%.2f Fahrenheit is: %0.2f Celsius' %(fahrenheit, celsius))
+scale = input("Select (F) or (C): " )
+source_temp = int(input("What is the temperature: " ))
+s, m = convert_temp(scale, source_temp)
+print(source_temp, "degrees", scale, "is", m, "degrees", 
