@@ -1,8 +1,33 @@
-#Program to check Common Letters in Two input string 
-
-str1=input("hey:")
-str2=input("hello:")
-s=list(set(str1)&set(str2))
-print("The common letters are:")
-for i in s:
- print(i)
+ Function to print common characters of two Strings 
+# in alphabetical order 
+from collections import Counter 
+  
+def common(str1,str2): 
+      
+    # convert both strings into counter dictionary 
+    dict1 = Counter(str1) 
+    dict2 = Counter(str2) 
+  
+    # take intersection of these dictionaries 
+    commonDict = dict1 & dict2 
+  
+    if len(commonDict) == 0: 
+        print (-1)
+        return
+  
+    # get a list of common elements 
+    commonChars = list(commonDict.elements()) 
+  
+    # sort list in ascending order to print resultant 
+    # string on alphabetical order 
+    commonChars = sorted(commonChars) 
+  
+    # join characters without space to produce 
+    # resultant string 
+    print (''.join(commonChars)) 
+  
+# Driver program 
+if __name__ == "__main__": 
+    str1 = 'ilovepython'
+    str2 = 'Umuzi Is  the bEST'
+    common(str1, str2) 
