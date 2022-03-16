@@ -1,4 +1,4 @@
 def greet():
- print ("hello Tshepo! ")
+ print ("Hello Tshepo! ")
  
 greet()
