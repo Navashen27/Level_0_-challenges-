@@ -1,12 +1,10 @@
-def common_letters(str1, str2):
-    common = []
-    s = ", "
-
-    for i in str1:
-        for j in str2:
-            if j == i:
-                if i in common:
-                    continue
-                else:
-                    common.append(i)
-    print(s.join(common))
+def printing_vowels(str):
+    vowels=0
+    for i in str:
+        if(i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):
+            vowels=vowels+1
+            print ("the vowels in this string are :",i)
+    
+c = "Computer"
+b = printing_vowels(c)
+print (b)
