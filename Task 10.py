@@ -1,10 +1,8 @@
-def printing_vowels(str):
-    vowels=0
-    for i in str:
-        if(i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):
-            vowels=vowels+1
-            print ("the vowels in this string are :",i)
-    
-c = "Computer"
-b = printing_vowels(c)
-print (b)
+def common_letters(string1, string2):
+    string1 = string1.lower()
+    string2 = string2.lower()
+    output = " ".join(set(string1).intersection(string2))
+    return output
+
+x = common_letters("Miracles", "messages")
+print(f"Common letters: {x}")
