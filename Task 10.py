@@ -1,6 +1,12 @@
- s1=input("Enter first string:")
-s2=input("Enter second string:")
-a=list(set(s1)&set(s2))
-print("The common letters are:")
-for i in a:
-    print(i)
+def common_letters(str1, str2):
+    common = []
+    s = ", "
+
+    for i in str1:
+        for j in str2:
+            if j == i:
+                if i in common:
+                    continue
+                else:
+                    common.append(i)
+    print(s.join(common))
