@@ -1,8 +1,5 @@
 
-# Temperature in celsius degree
-celsius = 40
- 
-fahrenheit = (celsius * 1.8) + 32
- 
-print('%.2f Celsius is equivalent to: %.2f Fahrenheit'
-      %(celsius, fahrenheit))
+def celsius_to_fahrenheit(x):
+    f = x * (9/5)
+    f = f + 32
+    return f
