@@ -1,5 +1,15 @@
+def celcius_to_fahrenheit(x):
+    fahrenheit =(x*9)/5+32
+    return fahrenheit
 
-def celsius_to_fahrenheit(x):
-    f = x * (9/5)
-    f = f + 32
-    return f
+in_celcius = 32
+
+print (int(celcius_to_fahrenheit(in_celcius)))
+
+
+def fahrenheit_to_celcius(y):
+    celcius=(y-32)*5/9
+    return celcius
+
+b = 89.6
+print (int(fahrenheit_to_celcius(b)))
