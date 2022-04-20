@@ -1,4 +1,4 @@
 def hello(word):
- print ('Hello '+Tshepo + ! ')
+ print ('Hello '+ word + '!')
  
 hello("Tshepo")
