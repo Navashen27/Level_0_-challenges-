@@ -1,4 +1,4 @@
-#  pseudocode into actual code 
+
 x= (0)
 y= (1)
 
