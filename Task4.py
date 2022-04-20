@@ -1,5 +1,5 @@
-# Python function to check EVEN or ODD
-def CheckEvenOdd(num): 
+# Python function to EVEN_or_ODD
+def CEven_or_Odd(num): 
   if (num % 2 == 0): 
     print(num," is EVEN")
   else: 
