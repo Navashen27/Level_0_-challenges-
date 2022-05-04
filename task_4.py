@@ -1,4 +1,3 @@
-# Python function to examine even_or_odd numbers
 
 def   even_or_odd(num): 
   if (num % 2 == 0): 
