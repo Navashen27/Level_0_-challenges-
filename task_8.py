@@ -10,6 +10,6 @@ def time_conv(time):
     elif hours >=0 and minutes ==1:
         print (f"{hours}) hour, {minutes} minute")
     else:
-        print (f"{hours}) hour, {minutes} minute")
+        print (f"{hours}) hours, {minutes} minutes")
 
 time_conv(100)
