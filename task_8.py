@@ -1,4 +1,3 @@
-# A function to convert any number into hours and minutes.
 
 def time_conv(time):
     hours = time // 60
