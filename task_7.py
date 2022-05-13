@@ -1,15 +1,9 @@
-def celcius_to_fahrenheit(x):
-    fahrenheit =(x*9)/5+32
-    return fahrenheit
+def celsius_to_fahrenheit(celsuis):
+    return (9/5 * celsuis) + 32
 
-in_celcius = 32
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
 
-print (int(celcius_to_fahrenheit(in_celcius)))
-
-
-def fahrenheit_to_celcius(y):
-    celcius=(y-32)*5/9
-    return celcius
-
-b = 89.6
-print (int(fahrenheit_to_celcius(b)))
+if __name__ == "__main__":
+    print(celsius_to_fahrenheit(0))
+    print(fahrenheit_to_celsius(32))
