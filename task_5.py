@@ -1,8 +1,5 @@
-def trinangle_area(side1,side2,side3) :
-    semiperimeter = side1 + side2 + side3 / 2
-    area = (side1 *(semiperimeter-side1)*(semiperimeter - side2)*(semiperimeter - side3)) * 0.5
-    return area
-
-area_tri = trinangle_area(6,5,5)
-
-print (f'The area of the triangle is : {area_tri}')
+def area_of_triangle(x,y,z):
+    semi_perimeter = (1/2)*(x+y+z)
+    Area = (semi_perimeter*(semi_perimeter-x)*(semi_perimeter-y)*(semi_perimeter-z))**(1/2)
+    
+    return Area
