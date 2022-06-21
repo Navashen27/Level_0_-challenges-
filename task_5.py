@@ -1,5 +1,7 @@
-def area_of_triangle(x,y,z):
-    semi_perimeter = (1/2)*(x+y+z)
-    Area = (semi_perimeter*(semi_perimeter-x)*(semi_perimeter-y)*(semi_perimeter-z))**(1/2)
-    
-    return Area
+def triangle_area(side1, side2, side3): 
+    print ('The area of this triangle is:')
+    return (side1 + side2 + side3) * 1/2
+
+result = triangle_area(3, 4, 5)
+
+print(result)
