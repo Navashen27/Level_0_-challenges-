@@ -1,7 +1,7 @@
-def even_or_odd(num):
-    if num % 2 == 0:
-        print('even')
-    else:
-        print('odd')
-
-even_or_odd(2)
+def even_or_odd(number): 
+ check = number % 2 
+ if check > 0:
+    print("odd")
+ else:
+    print("even")
+even_or_odd(77) 
