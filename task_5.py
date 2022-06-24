@@ -1,7 +1,4 @@
-def triangle_area(side1, side2, side3): 
-    print ('The area of this triangle is:')
-    return (side1 + side2 + side3) * 1/2
-
-result = triangle_area(3, 4, 5)
-
-print(result)
+def triangle_area(val1,val2,val3):
+ area = (val1+val2+val3)/2
+ return (area*(area-val1)*(area-val2)*(area-val3)) ** 0.5
+print(triangle_area(15,20,15))
