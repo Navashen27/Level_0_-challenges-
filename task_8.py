@@ -1,13 +1,15 @@
-def time_conv(time):
-    hours = time // 60
-    minutes = time % 60
-    if hours == 1 and minutes == 1:
-        print (f" {hours} hour , {minutes} minute")
-    elif hours == 1 and minutes >= 0:
-        print (f" {hours} hour , {minutes} minutes")
-    elif hours >=0 and minutes ==1:
-        print (f"{hours} hour , {minutes} minute")
-    else:
-         print (f"{hours} hours , {minutes} minutes")
-
-time_conv(100)
+def number_to_hours_mins(num):
+    hours = num//60
+    minutes = num % 60
+    if hours > 1 or hours == 0:
+        if minutes > 1 or minutes == 0:
+            print(f"{hours} hours, {minutes} minutes")
+        else:
+            print(f"{hours} hours, {minutes} minute")
+    if hours == 1:
+        if minutes > 1 or minutes == 0:
+            print(f"{hours} hour, {minutes} minutes")
+        else:
+            print(f"{hours} hour, {minutes} minute")
+                   
+number_to_hours_mins(121)
