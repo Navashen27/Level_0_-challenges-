@@ -1,4 +1,6 @@
-def triangle_area(val1,val2,val3):
- area = (val1+val2+val3)/2
- return (area*(area-val1)*(area-val2)*(area-val3)) ** 0.5
-print(triangle_area(15,20,15))
+def area_of_triangle(side_a, side_b, side_c):
+    semi_perimeter = 0.5*(side_a + side_b + side_c)
+    area = (semi_perimeter*(semi_perimeter-side_a)*(semi_perimeter-side_b)*(semi_perimeter-side_c))**0.5
+    return area
+
+print("Area of triangle = ", area_of_triangle(3, 4, 5))
