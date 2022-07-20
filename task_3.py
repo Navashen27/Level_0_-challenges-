@@ -1,4 +1,3 @@
-def hello(word):
-    print ('Hello'+ word + '!')
-
-    hello("Tshepo")
+def hello(name):
+   print(f"Hello {name}!")
+hello("Tshepo") 
