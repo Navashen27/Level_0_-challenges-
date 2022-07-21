@@ -1,7 +1,8 @@
 def even_or_odd (number):
-    if number %  2 == 0:
-        print ("odd")
-    else:
-        print("even")
+      
+      if number % 2 == 0:
+            print ('even')
+      else:
+            print("odd")
 
-even_or_odd(12)
+even_or_odd(27)
