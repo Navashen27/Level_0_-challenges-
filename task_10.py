@@ -6,7 +6,7 @@ def common_letters(first_word, second_word):
         if (first_word[letter] in second_word) and (first_word[letter] not in common):
             common += first_word[letter]
 
-    print("Common letters: " + ", ".join(common))
+    print  (F"Common letters: " + ", ".join(common))
 
 
 def main():
