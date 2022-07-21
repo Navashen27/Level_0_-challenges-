@@ -1,17 +1,11 @@
 def common_letters(first_word, second_word):
-    first_word = first_word.casefold()
-    second_word = second_word.casefold()
-    common = ""
-    for letter in range(len(first_word)):
-        if (first_word[letter] in second_word) and (first_word[letter] not in common):
-            common += first_word[letter]
+    common = []
+    for letter in first_word.lower():
+        if letter in second_word.lower():
+            common.append(letter)
 
-    print  (F"Common letters: " + ", ".join(common))
-
-
-def main():
-    common_letters("House", "Computer")
+    print(f"Common letters: {', '.join(set(common))}")
 
 
 if __name__ == "__main__":
-    main()
+    common_letters("House", "Computer")
