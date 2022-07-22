@@ -5,6 +5,6 @@ def vowel_extract(data):
     for  letter in data:
         if letter in vowels:
             vowels_in_data.append(letter)
-    print("Vowels: "+",".join(set(vowels_in_data)) )
+    print("Vowels: "+", ".join(set(vowels_in_data)) )
 
 vowel_extract ("Umuzi")
